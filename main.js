@@ -66,14 +66,12 @@ function showSong(songArray) {
       let bandNameDiv = document.createElement("div");
       bandNameDiv.classList.add("bandName");
       bandNameDiv.innerText = `Artist Name: ${song.artistName}`;
-      songCardDiv.appendChild(songTitleDiv);
       songCardDiv.appendChild(bandNameDiv);
 
       //Album from the API
       let albumDiv = document.createElement("div");
       albumDiv.classList.add("album");
       albumDiv.innerText = `Album Name: ${song.collectionName}`;
-      songCardDiv.appendChild(bandNameDiv);
       songCardDiv.appendChild(albumDiv);
 
       // Event listener to perform the element mmoves on the page when the first song is played
