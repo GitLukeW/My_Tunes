@@ -53,8 +53,8 @@ function showSong(songArray) {
       // Album thumbnail from the API
       let albumArt = document.createElement("img");
       albumArt.classList.add("albumart");
-      songCardDiv.appendChild(albumArt);
       albumArt.src = `${song.artworkUrl100}`;
+      songCardDiv.appendChild(albumArt);
 
       //Song Title from the API
       let songTitleDiv = document.createElement("div");
@@ -74,7 +74,7 @@ function showSong(songArray) {
       albumDiv.innerText = `Album Name: ${song.collectionName}`;
       songCardDiv.appendChild(albumDiv);
 
-      // Event listener to perform the element mmoves on the page when the first song is played
+      // Event listener to perform the element moves on the page when the first song is played
       songCardDiv.addEventListener("click", (event) => {
         playAudio.src = `${song.previewUrl}`;
         nowplaying.innerText = "Now Playing: ";
